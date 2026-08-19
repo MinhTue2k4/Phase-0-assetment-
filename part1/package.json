@@ -1,0 +1,9 @@
+{
+  "name": "assessment-part1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/main.js"
+  }
+}
