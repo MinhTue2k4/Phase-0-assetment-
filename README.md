@@ -6,7 +6,7 @@ Tổng thời gian: **3 tiếng**, làm liền một buổi. Chia 3 phần, làm
 Không được dùng: AI (Claude, ChatGPT, Copilot…), và không xem lại code Phase 0 của
 mình ở phần 2.
 
-Nộp: mỗi phần một comment riêng vào issue của bài kiểm tra.
+Nộp qua Pull Request — xem mục "Quy trình bắt buộc" bên dưới.
 
 | Phần | Nội dung | Thời gian |
 |---|---|---|

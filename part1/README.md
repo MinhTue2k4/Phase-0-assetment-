@@ -21,7 +21,8 @@ dịch — trông như thành công — rồi `node dist/main.js` báo `MODULE_N
 1. `Doanh thu (don paid)` = tổng `amount` của **tất cả đơn có `status` là `paid`**, tính
    ra một con số.
 2. Mỗi dòng tiếp theo = **tên** của một user, kèm tổng `amount` các đơn `paid` của
-   user đó. Tên lấy từ danh sách users, không phải id.
+   user đó. Tên lấy từ danh sách users, không phải id. Chỉ in user có **ít nhất một**
+   đơn `paid`; user không có đơn `paid` nào thì không xuất hiện.
 3. `archiveOldOrders()` loại các đơn `pending` ra khỏi danh sách.
 4. Dòng cuối `So don con lai` = số đơn còn lại **sau khi** archive xong.
 

@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "tsc",
+    "build": "npx -p typescript@latest tsc",
     "start": "node dist/main.js"
   }
 }
