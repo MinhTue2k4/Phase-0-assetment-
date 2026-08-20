@@ -5,10 +5,16 @@ output không đúng với đặc tả dưới đây.
 
 ## Chạy
 
+Mọi lệnh của phần này chạy **trong thư mục `part1/`**, không phải ở gốc repo:
+
 ```
+cd part1
 npx -p typescript@latest tsc
 node dist/main.js
 ```
+
+Chạy ở gốc repo thì `tsc` không thấy `tsconfig.json` nên in bảng trợ giúp thay vì biên
+dịch — trông như thành công — rồi `node dist/main.js` báo `MODULE_NOT_FOUND`.
 
 ## Đặc tả — chương trình PHẢI làm đúng những điều này
 

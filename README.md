@@ -11,11 +11,23 @@ Nộp: mỗi phần một comment riêng vào issue của bài kiểm tra.
 | Phần | Nội dung | Thời gian |
 |---|---|---|
 | 1 | Debug — [part1/](./part1) | 90 phút |
-| 2 | Viết lại từ đầu — [part2.md](./part2.md) | 45 phút |
+| 2 | Viết lại từ đầu — [part2/README.md](./part2/README.md) | 45 phút |
 | 3 | Trả lời câu hỏi — [part3.md](./part3.md) | 30 phút |
 
 Hết giờ phần nào thì dừng phần đó, ghi rõ làm được tới đâu. Nộp dở đúng thời gian
 được tính điểm cao hơn nộp đủ mà quá giờ.
+
+## Cấu trúc và thư mục làm việc
+
+```
+part1/        phần 1 — code có bug, tsconfig.json có sẵn
+part2/        phần 2 — viết 2 file vào đây, tsconfig.json có sẵn
+part3.md      phần 3 — câu hỏi
+```
+
+Phần 1 và phần 2 mỗi phần có `tsconfig.json` riêng. **Luôn `cd` vào thư mục của phần đó
+trước khi chạy `tsc`.** Chạy `tsc` ở gốc repo thì nó in bảng trợ giúp rồi thoát với mã 0
+— trông như thành công nhưng không biên dịch gì.
 
 ## Quy trình bắt buộc — mốc giờ
 
@@ -24,12 +36,12 @@ Làm trên branch riêng, tên `assessment/<tên>`. Có 4 lần push, **push nga
 
 | Lần | Nội dung commit | Ý nghĩa |
 |---|---|---|
-| 1 | tạo và đẩy file rỗng `part1/expected-output.md` lên | mốc **bắt đầu** |
+| 1 | file `part1/expected-output.md` — output đúng tự tính bằng tay | mốc **bắt đầu** |
 | 2 | phần 1 làm xong | hết phần 1 |
 | 3 | phần 2 làm xong | hết phần 2 |
 | 4 | phần 3 làm xong | hết bài |
 
-Push lần 1 phải xong **trước khi làm bất kì phần nào** của phần 1. Thời gian tính từ
+Push lần 1 phải xong **trước khi sửa dòng code nào** của phần 1. Thời gian tính từ
 push lần 1.
 
 Dồn tất cả vào một lần push cuối buổi thì phần chấm thời gian bị tính là không có dữ
