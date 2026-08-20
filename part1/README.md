@@ -28,8 +28,8 @@ dịch — trông như thành công — rồi `node dist/main.js` báo `MODULE_N
 ## Việc cần làm
 
 - [ ] Tự tính ra bằng tay output đúng phải là gì, dựa vào dữ liệu trong `api.ts` và
-      đặc tả trên. Ghi vào `part1/expected-output.md`, commit và **push ngay** — đây là
-      mốc giờ bắt đầu, phải xong trước khi sửa dòng code nào
+      đặc tả trên, ghi vào `part1/expected-output.md` — file này đã được push rỗng từ
+      trước khi bắt đầu (xem README ở gốc repo), giờ chỉ điền nội dung vào
 - [ ] So output thật với output đúng. Với **mỗi** chỗ lệch: chỉ ra `file:dòng`, giải
       thích cơ chế gây ra nó, và nói vì sao `tsc` không bắt được
 - [ ] Sửa, chạy lại, output khớp đặc tả

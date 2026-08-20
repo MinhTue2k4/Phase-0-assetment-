@@ -36,12 +36,12 @@ Làm trên branch riêng, tên `assessment/<tên>`. Có 4 lần push, **push nga
 
 | Lần | Nội dung commit | Ý nghĩa |
 |---|---|---|
-| 1 | file `part1/expected-output.md` — output đúng tự tính bằng tay | mốc **bắt đầu** |
+| 1 | tạo và đẩy file rỗng `part1/expected-output.md` lên | mốc **bắt đầu** |
 | 2 | phần 1 làm xong | hết phần 1 |
 | 3 | phần 2 làm xong | hết phần 2 |
 | 4 | phần 3 làm xong | hết bài |
 
-Push lần 1 phải xong **trước khi sửa dòng code nào** của phần 1. Thời gian tính từ
+Push lần 1 phải xong **trước khi làm bất kì phần nào** của phần 1. Thời gian tính từ
 push lần 1.
 
 Dồn tất cả vào một lần push cuối buổi thì phần chấm thời gian bị tính là không có dữ
