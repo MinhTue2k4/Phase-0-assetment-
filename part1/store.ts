@@ -6,7 +6,6 @@ export const store = {
     orders: [] as Order[],
 };
 
-export const userNameById = new Map(store.users.map((u) => [u.id, u.name]));
 
 export async function loadUsers(): Promise<void> {
     store.users = await fetchUsers();
