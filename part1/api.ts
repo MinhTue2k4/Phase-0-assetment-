@@ -29,6 +29,6 @@ export async function fetchOrders(): Promise<Order[]> {
     const data = await readData();
     return (data.orders as Order[]).map(order =>({
       ...order, //nhớ dùng spread, ko lại đụng vào data gốc, mất công sửa sau. 
-      amount: Number(order.amount) || 0 
+      amount: Number(order.amount) 
     }))
 }
