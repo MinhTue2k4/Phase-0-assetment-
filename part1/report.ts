@@ -1,4 +1,4 @@
-import { store, userNameById } from './store.js';
+import { store } from './store.js';
 
 export function printReport(): void {
     console.log('--- BAO CAO ---');
@@ -15,6 +15,8 @@ export function printReport(): void {
     for (const order of paid) {
         perUser.set(order.userId, (perUser.get(order.userId) ?? 0) + order.amount);
     }
+
+    const userNameById = new Map(store.users.map((u) => [String(u.id), u.name]));
 
     for (const [userId, total] of perUser) {
         const name = userNameById.get(userId) ?? 'Unknown';

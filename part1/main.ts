@@ -7,7 +7,7 @@ async function main(): Promise<void> {
 
     printReport();
 
-    archiveOldOrders();
+    await archiveOldOrders();
 
     console.log('Xong. So don con lai:', store.orders.length);
 }
