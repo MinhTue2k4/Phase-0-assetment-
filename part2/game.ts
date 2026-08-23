@@ -11,15 +11,20 @@ export const game: GameConfig = {
     deck_of_heroes(): Cards_of_heroes[] {
         //create a copy and take random from database  
         const shuffled_all_heroes = [...this.Heroes_Data].sort(() => 0.5 - Math.random());
-    };
-    //take random 10 
-    const randomize_heroes = shuffled_all_heroes.slice(0, 10);
-    //saved heroes into a new array 
-    game.Cards_Data = randomize_heroes.map((hero) => {
-        return {
+
+        //take random 10 
+        const randomize_heroes = shuffled_all_heroes.slice(0, 10);
+        //saved heroes into a new array 
+        this.Cards_Data = randomize_heroes.map((hero) => {
+            return {
                 name: hero.localized_name,
                 image: 'https://cdn.steamstatic.com' + hero.img,
             };
-    });
-// double the heroes 
+        })
+        // double the heroes 
+        const heroesMultiplyx2 = this.Cards_Data.concat(this.Cards_Data);
+        // shuffle one last time 
+        heroesMultiplyx2.sort(() => 0.5 - Math.random());
+        return heroesMultiplyx2; 
+    }
 }

@@ -1,5 +1,5 @@
 export interface HeroAPI {
-    localize_name: string;
+    localized_name: string;
     img: string;
 }
 export interface Cards_of_heroes {
